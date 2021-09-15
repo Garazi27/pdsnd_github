@@ -8,7 +8,8 @@ Bikeshare project --- Garazi27/pdsnd_github
 The Bikeshare project was developed for the course "Programming for Data Science with Python Nanodegree Program" of Udacity. In the project it is use Python program to explore data related to bike share system for three major cities in the United States (Chicago, New York City and Washington).
 
 ### Files used
-Include the files used
+bikeshare.py
+project_readme.txt
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
