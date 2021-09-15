@@ -6,9 +6,9 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
-Months = ["january","february","march","april","may","june","all"]
+MONTHS = ["january","february","march","april","may","june","all"]
 
-Days = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday","all"]
+DAYS = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday","all"]
 
 def get_filters():
     """
@@ -32,7 +32,7 @@ def get_filters():
     
     month = input("Which month do you want to get de info from (all, january, february, march, april, may, june)? ")
     month = month.lower()
-    while month not in Months:
+    while month not in MONTHS:
             print("Please, select a valid month: all, january, february, march, april, may, june")
           
             month = input("Which month do you want to get de info from (all, january, february, march, april, may, june)? ")
@@ -41,7 +41,7 @@ def get_filters():
     
     day = input ("Which day do you want to get de info from (all, monday, tuesday, wednesday, thursday, friday, saturday, sunday)? ")
     day = day.lower()
-    while day not in Days:
+    while day not in DAYS:
             print("Please, select a valid day: all, monday, tuesday, wednesday, thursday, friday, saturday, sunday")
           
             day = input("Which day do you want to get de info from (all, monday, tuesday, wednesday, thursday, friday, saturday, sunday)? ")
@@ -75,7 +75,7 @@ def load_data(city, month, day):
 
     if month != 'all':
         
-        month_index = Months.index(month)
+        month_index = MONTHS.index(month)
         
         df = df[df['month'] == month_index]
         
